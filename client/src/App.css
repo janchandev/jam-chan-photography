@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+/* --NavBar-- */
+
+nav {
+  /* border: solid grey 2px; */
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5.625rem;
+}
+
+.nav-title img {
+  height: 90px;
+}
+
+.nav-title h1 {
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 1.813rem;
+  color: #4F95BC;
+}
+
+.nav-title {
+  display: flex;
+  /* border: solid black 2px; */
+}
+
+.nav-links {
+  margin-top: 50px;
+  /* border: solid black 2px; */
+}
+
+.nav-links a {
+  font-family: 'Encode Sans', sans-serif;
+  color:#4F95BC;
+  text-decoration: none;
+  margin-left: 2.313rem;
+}
+
+/* --Hero Banner-- */
+
+.hero-images {
+  text-align: center;
+  /* border: solid black 2px; */
+  margin-top: 3.125rem;
+  background-image: url(./images/Rectangles.svg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100%;
+  background-position: center center;
+  position: relative;
+}
+
+
+.border {
+  /* border: solid black 2px; */
+  position: absolute;
+  /* z-index: -1; */
+  top: 7.813rem;
+}
+
+.border.left {
+  /* left: 4.375rem; */
+  left: 15vw;
+}
+
+.border.right {
+  /* right: 4.375rem; */
+  right: 15vw;
+}
+
+/* --Mini About-- */
+
+.about-blurb {
+  border: solid black 2px;
+  margin: 7.813rem 7.813rem 0;
+  display: flex;
+}
+
+.blurb-text h3 {
+  font-family: 'Merriweather', serif;
+  line-height: 0.3;
+  font-size: 1.875rem;
+}
+
+.blurb-text h3:nth-child(1) { 
+  color: #DEA98E;
+}
+
+.blurb-text h3:nth-child(2) {
+  color: #74B0D6;
+}
+
+.blurb-text p {
+  font-family: 'Encode Sans', sans-serif;
+  color: #555151;
+  font-size: 20px;
+}
+
