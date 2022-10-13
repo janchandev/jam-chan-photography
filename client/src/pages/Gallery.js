@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from "react"
+import { useState, useEffect } from 'react'
 import { db } from '../firebase-config'
 import { collection, getDocs } from 'firebase/firestore'
 
@@ -16,6 +16,13 @@ const Gallery = () => {
         getThumbnails()
     }, [])
 
+    const albumLink = (e) => {
+        // Get string of the name of the album
+        let albumName = e.target.alt
+        console.log(albumName)
+        // Use string to 
+    }
+
   
     return (
     <div>
@@ -25,7 +32,7 @@ const Gallery = () => {
             {thumbnails.map((thumbnail) => {
                 return (
                     <img src={thumbnail.source} alt={thumbnail.albumtitle} title={thumbnail.albumtitle} 
-                    className="cursor-pointer"/>
+                    className="cursor-pointer" onClick={albumLink}/>
                 )
             })}
         </section>
