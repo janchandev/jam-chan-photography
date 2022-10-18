@@ -22,7 +22,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
 
-// Passes the app variable to the getFirestore function in order to
-// get the Firestore information 
-// need to access db in another file so we need to export
+// Initialize database
  export const db = getFirestore(app)
+
+
+

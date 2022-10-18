@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProfilePhoto } from '../images'
+import { Toronto } from '../images'
 // import '../App.css';
 
 const MiniAbout = () => {
@@ -13,7 +13,7 @@ const MiniAbout = () => {
         Ut fringilla, nibh eu lacinia pellentesque, 
         ligula leo dignissim ex, eget faucibus nunc dolor eu dolor.</p>
       </div>
-      <img src={ProfilePhoto} alt="Photographer" className="" />
+      <img src={Toronto} alt="Toronto Skyline" className="" />
 
     </section>
   )

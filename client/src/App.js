@@ -14,7 +14,6 @@ function App() {
   return (
     <div>
       <Navbar />
-      {/* Container for rendering pages */}
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -22,13 +21,10 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/stock-photos" element={<StockPhotos />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/album" element={<Album />} />
+          <Route path="/album/:albumid" element={<Album />} />
           <Route path="*" element={<h1 className="text-headBlue font-merriweather text-4xl text-center mt-10">Error 404: Page not found.</h1>} />
         </Routes>
       </div>
-      {/* <Home /> */}
-      {/* <Gallery /> */}
-      {/* <Album /> */}
     </div>
   );
 }

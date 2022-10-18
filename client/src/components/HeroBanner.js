@@ -6,12 +6,12 @@ import { Image1, Image2, Image3, Image4, BorderLeft, BorderRight} from '../image
 const HeroBanner = () => {
   return (
     <div>
-        <div className="hero-images flex flex-wrap justify-center mt-12 bg-rectangles bg-no-repeat bg-center bg-fullX">
+        <figure className="hero-images flex flex-wrap justify-center mt-12 bg-rectangles bg-no-repeat bg-center bg-fullX">
             <img src={Image1} alt="Canary Miku" />
             <img src={Image2} alt="Ereshtar" />
             <img src={Image3} alt="Cool Fox" />
             <img src={Image4} alt="Arthur" />
-        </div>
+        </figure>
 
     </div>
   )

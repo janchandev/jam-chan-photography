@@ -17,7 +17,9 @@ module.exports = {
         merriweather: ["Merriweather", "serif"]
       },
       backgroundImage: {
-        'rectangles': "url('/src/images/Rectangles.svg')"
+        'rectangles': "url('/src/images/Rectangles.svg')",
+        'seashore': "url('/src/images/seashorec.png')",
+        'flowerTree': "url('/src/images/blueskyflowers.png')"
       },
       backgroundSize: {
         'fullX': ["100vw", "100%"]

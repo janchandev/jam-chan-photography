@@ -11,6 +11,8 @@ import BorderLeft from './border-left.svg'
 import BorderRight from './border-right.svg'
 import Hamburger from './hamburger-menu.svg'
 import Close from './close-line-icon.svg'
+import Seashore from './seashorec.png'
+import Toronto from './toronto.png'
 
 export {
     Image1,
@@ -25,5 +27,7 @@ export {
     BorderLeft,
     BorderRight,
     Hamburger,
-    Close
+    Close,
+    Seashore,
+    Toronto
 };

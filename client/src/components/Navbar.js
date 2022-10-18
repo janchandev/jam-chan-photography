@@ -30,7 +30,7 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(false)
 
   return (
-    <nav className="w-full flex justify-between items-center lg:px-20 2xl:px-36 px-4 border-solid border-black border-2">
+    <nav className="w-full flex justify-between items-center lg:px-20 2xl:px-36 px-4">
         <Link to="/">
           <div className="navbar-logo flex cursor-pointer">
             <img className="h-24"src={Logo} alt="Home logo" title="Home" />
@@ -41,7 +41,7 @@ const Navbar = () => {
             {/* Large nav links */}
             <ul className="list-none md:flex hidden justify-end items-center flex-1">
                 {links.map((link, index) => (
-                    <li key={link.id} className={'font-encodeSans text-darkBlue cursor-pointer md:ml-9 pt-10 '}>
+                    <li key={link.id} className={'font-encodeSans text-darkBlue hover:text-darkOrange hover:underline duration-500 cursor-pointer md:ml-9 pt-10 '}>
                         <Link to={link.path}>{link.title}</Link>
                     </li>
                 ))}
