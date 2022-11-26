@@ -1,19 +1,21 @@
 import React from 'react'
 // import '../App.css';
 
-import { Image1, Image2, Image3, Image4, BorderLeft, BorderRight} from '../images/index'
+import { Placeholder, Brackets, Seashore  } from '../images/index'
 
 const HeroBanner = () => {
   return (
     <div>
-        <figure className="hero-images flex flex-wrap justify-center mt-12 bg-rectangles bg-no-repeat bg-center bg-fullX">
-            <img src={Image1} alt="Canary Miku" />
-            <img src={Image2} alt="Ereshtar" />
-            <img src={Image3} alt="Cool Fox" />
-            <img src={Image4} alt="Arthur" />
+        <figure className="hero-images flex flex-wrap justify-center mt-10 bg-rectangles bg-no-repeat bg-center bg-fullX">
+          <div className="flex justify-center " >
+            {/* <img src={Brackets} alt="" className="relative z-10" /> */}
+            <img src={Placeholder} alt="" className="w-2/3" />
+          </div>
+        
+            {/* <img src={Placeholder} alt="" className="w-2/4 z-10 absolute"/> */}
         </figure>
 
-    </div>
+    </div> 
   )
 }
 

@@ -19,10 +19,14 @@ module.exports = {
       backgroundImage: {
         'rectangles': "url('/src/images/Rectangles.svg')",
         'seashore': "url('/src/images/seashorec.png')",
-        'flowerTree': "url('/src/images/blueskyflowers.png')"
+        'flowerTree': "url('/src/images/blueskyflowers.png')",
+        'brackets' : "url('/src/images/brackets1.png')"
       },
       backgroundSize: {
         'fullX': ["100vw", "100%"]
+      },
+      backgroundPosition: {
+        'from-brackets': '20px 20px'
       }
     },
   },

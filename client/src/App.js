@@ -9,6 +9,7 @@ import Gallery from './pages/Gallery'
 import StockPhotos from './pages/StockPhotos'
 import Contact from './pages/Contact'
 import Album from './pages/Album'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/album/:albumid" element={<Album />} />
           <Route path="*" element={<h1 className="text-headBlue font-merriweather text-4xl text-center mt-10">Error 404: Page not found.</h1>} />
         </Routes>
+        <Footer />
       </div>
     </div>
   );

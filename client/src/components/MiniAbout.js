@@ -4,11 +4,11 @@ import { Toronto } from '../images'
 
 const MiniAbout = () => {
   return (
-    <section className="flex flex-wrap justify-between mt-28 mx-28 ">
+    <section className="flex flex-wrap justify-center gap-10 mt-28 mx-28 ">
       <div className="about-blurb lg:max-w-lg">
         <h3 className="text-darkOrange font-merriweather text-3xl">Based in the</h3>
         <h3 className="text-headBlue font-merriweather text-3xl">Greater Toronto Area</h3>
-        <p className="font-encodeSans text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        <p className="font-encodeSans text-xl max-w-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Quisque at dictum leo. 
         Ut fringilla, nibh eu lacinia pellentesque, 
         ligula leo dignissim ex, eget faucibus nunc dolor eu dolor.</p>

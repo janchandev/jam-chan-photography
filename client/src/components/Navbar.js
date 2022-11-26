@@ -29,9 +29,11 @@ const Navbar = () => {
 
     const [toggle, setToggle] = useState(false)
 
+    const toggleClick = () => setToggle((prev) => !prev)
+
   return (
     <nav className="w-full flex justify-between items-center lg:px-20 2xl:px-36 px-4">
-        <Link to="/">
+        <Link to="/" onClick={toggleClick}>
           <div className="navbar-logo flex cursor-pointer">
             <img className="h-24"src={Logo} alt="Home logo" title="Home" />
             <h1 className="font-goudy text-darkBlue text-3xl pt-4 ">Jam Chan <br /> Photography</h1>
@@ -49,12 +51,12 @@ const Navbar = () => {
 
              {/* Small nav links */}
             <div className="md:hidden flex flex-1 justify-end items-center">
-                <img src={toggle ? Close : Hamburger} alt="Menu" className="w-10 h-10 object-contain" onClick={() => setToggle((prev) => !prev)}/>
-                <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-headBlue absolute top-20 right-0 mx-4 my-2 min-w[140px] sidebar`}>
+                <img src={toggle ? Close : Hamburger} alt="Menu" className="w-10 h-10 object-contain" onClick={toggleClick}/>
+                <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-darkBlue/90 absolute top-24 right-0 w-full sidebar`}>
                     <ul className="list-none flex flex-col justify-end items-center flex-1">
                     {links.map((link, index) => (
-                        <li key={link.id} className={'font-encodeSans cursor-pointer py-4 '}>
-                            <Link to={link.path}>{link.title}</Link>
+                        <li key={link.id} className={'font-encodeSans cursor-pointer py-4 text-white hover:text-lightOrange hover:underline duration-500'}>
+                            <Link to={link.path} onClick={toggleClick}>{link.title}</Link>
                         </li>
                     ))}
                     </ul>
